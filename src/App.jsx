@@ -9,6 +9,9 @@ import "./App.css";
 const image_url =
   "https://iiif.bodleian.ox.ac.uk/iiif/image/3e751ba1-4e22-4848-a555-a54f033b12b8/info.json";
 
+const manifest_url =
+  "https://iiif.bodleian.ox.ac.uk/iiif/manifest/3e751ba1-4e22-4848-a555-a54f033b12b8.json";
+
 function App() {
   const [active, setActive] = useState(null); /* set initial states */
 
@@ -40,7 +43,30 @@ function App() {
         <div ref={viewerRef} className="osd-viewer" />
       </div>
 
-      <aside className="info-panel"></aside>
+      <aside className="info-panel">
+        <div className="playbill-info">
+          <h1>Overview</h1>
+        </div>
+
+        <div className="app-info">
+          <h4>Application</h4>
+          <p>
+            This application is built using React and Vite, using the {"  "}
+            <a href="https://openseadragon.github.io/" target="_blank">
+              OpenSeadragon
+            </a>{" "}
+            IIIF viewer.
+          </p>
+        </div>
+
+        <div className="dynamic-box">
+          <div className="tips-box">
+            <h3>Tips</h3>
+
+            <h3>Playbill Notes</h3>
+          </div>
+        </div>
+      </aside>
     </div>
   );
 }

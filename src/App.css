@@ -28,3 +28,25 @@
   padding: 1rem;
   overflow-y: auto;
 }
+
+.playbill-info {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.app-info {
+  border-bottom: 1px solid #ddd;
+  font-size: 12px;
+  line-height: normal;
+}
+
+.dynamic-section {
+  margin-top: 1rem;
+}
+
+h1,
+h2,
+h3 {
+  font-style: italic;
+  letter-spacing: 0.02rem;
+}
